@@ -8,7 +8,7 @@ class View(ft.UserControl):
         self._page = page
         self._page.title = "Laboratorio 07 - Ricorsione"
         self._page.horizontal_alignment = 'CENTER'
-        self._page.theme_mode = ft.ThemeMode.LIGHT
+        self._page.theme_mode = ft.ThemeMode.DARK
         # controller (it is not initialized. Must be initialized in the main, after the controller is created)
         self._controller = None
         # graphical elements
@@ -48,8 +48,7 @@ class View(ft.UserControl):
         self.btn_calcola_sequenza = ft.ElevatedButton(text="Calcola sequenza",
                                              tooltip="Calcola la sequenza ottimale per le analisi",
                                              on_click=self._controller.handle_sequenza)
-        row1 = ft.Row([self.dd_mese, self.btn_umidita, self.btn_calcola_sequenza],
-                      alignment=ft.MainAxisAlignment.CENTER)
+        row1 = ft.Row([self.dd_mese, self.btn_umidita, self.btn_calcola_sequenza],alignment=ft.MainAxisAlignment.CENTER)
         self._page.controls.append(row1)
 
         # List View where the reply is printed
