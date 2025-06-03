@@ -3,6 +3,7 @@ import flet as ft
 from UI.view import View
 from model.model import Model
 
+#PROVA COMMENTO AAAAAAAAAAAAAAAAAAAAA
 
 class Controller:
     def __init__(self, view: View, model: Model):
